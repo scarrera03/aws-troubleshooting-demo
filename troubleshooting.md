@@ -47,7 +47,7 @@ demo-key.pem is successfully created
 
 The EC2 instance DemoInstance is launched in the correct region
 
-❌ InvalidGroup.Duplicate
+## ❌ InvalidGroup.Duplicate
 
 Problem Description
 When executing the script, it attempted to create a security group named demo-sg, but it already existed in the VPC.
@@ -64,7 +64,7 @@ Delete it with the following command:
 
 aws ec2 delete-security-group --group-name demo-sg
 
-❌ Unable to Locate Credentials
+## ❌ Unable to Locate Credentials
 
 Problem Description
 The script couldn't authenticate with AWS because credentials were not configured.
