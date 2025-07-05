@@ -22,6 +22,7 @@ Additionally, when trying to launch the EC2 instance, it failed with:
 
 ```bash
 An error occurred (InvalidKeyPair.NotFound) when calling the RunInstances operation: The key pair 'demo-key' does not exist
+```bash
 
 Cause
 The script attempted to create a key pair (demo-key.pem), but:
