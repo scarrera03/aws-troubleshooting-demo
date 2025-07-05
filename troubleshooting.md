@@ -62,8 +62,11 @@ The EC2 instance DemoInstance is launched in the correct region
 Problem Description
 When executing the script, it attempted to create a security group named demo-sg, but it already existed in the VPC.
 Error Message
+
+```bash
 An error occurred (InvalidGroup.Duplicate) when calling the CreateSecurityGroup operation:  
 The security group 'demo-sg' already exists for VPC 'vpc-xxxxxxxxxxxxxxxxx'
+```
 
 Solution
 Check if the security group already exists in the EC2 console. If it does, you can either:
@@ -72,7 +75,9 @@ Reuse it directly in the script, or
 
 Delete it with the following command:
 
+```bash
 aws ec2 delete-security-group --group-name demo-sg
+```
 
 ## ❌ Unable to Locate Credentials
 
@@ -81,12 +86,17 @@ The script couldn't authenticate with AWS because credentials were not configure
 
 
 Error Message
+
+```bash
 Unable to locate credentials. You can configure credentials by running "aws configure".
+```
 
 Solution
 Run the following command:
 
+```bash
 aws configure
+```
 
 Then enter:
 
