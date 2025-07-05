@@ -16,7 +16,6 @@ This document contains step-by-step solutions to common AWS CLI deployment issue
 
 When running the `deploy_script.sh` script, the following error appeared:
 
-```bash
 ./deploy_script.sh: line 18: demo-key.pem: Permission denied
 
 Additionally, when trying to launch the EC2 instance, it failed with:
