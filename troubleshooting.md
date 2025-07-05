@@ -22,7 +22,7 @@ Additionally, when trying to launch the EC2 instance, it failed with:
 
 ```bash
 An error occurred (InvalidKeyPair.NotFound) when calling the RunInstances operation: The key pair 'demo-key' does not exist
-```bash
+```
 
 Cause
 The script attempted to create a key pair (demo-key.pem), but:
@@ -42,17 +42,17 @@ Solution
 
 ```bash
 rm demo-key.pem
-
+```
 3. Delete the key pair in AWS:
 
 ```bash
 aws ec2 delete-key-pair --key-name demo-key
-
+```
 4. Run the script again:
 
 ```bash
 ./deploy_script.sh
-
+```
 Expected Result
 demo-key.pem is successfully created
 The EC2 instance DemoInstance is launched in the correct region
