@@ -56,7 +56,7 @@ aws-troubleshooting-demo/
 Cloud & Data Science Enthusiast | AWS & AI Learner
 
 - GitHub: [@scarrera03](https://github.com/scarrera03)
-- LinkedIn: [linkedin.com/in/silvinacarrera](https://www.linkedin.com/in/silvinacarrera)
+- LinkedIn: [linkedin.com/in/silvinacarrera](https://www.linkedin.com/in/silvinacarrerascholz)
 
 Feel free to explore other projects or connect with me for collaboration!
 ---
