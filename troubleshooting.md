@@ -1,5 +1,7 @@
 # Troubleshooting Guide
 
+This document contains step-by-step solutions to common AWS CLI deployment issues, especially when working with EC2 and Bash scripts.
+
 ## Table of Contents
 
 - [Key Pair Not Created / Permission Denied](#️-key-pair-not-created--permission-denied)
@@ -11,12 +13,15 @@
 ## ❌ Key Pair Not Created / Permission Denied
 
 ### Problem Description
+
 When running the `deploy_script.sh` script, the following error appeared:
 
 ```bash
 ./deploy_script.sh: line 18: demo-key.pem: Permission denied
+
 Additionally, when trying to launch the EC2 instance, it failed with:
 
+```bash
 An error occurred (InvalidKeyPair.NotFound) when calling the RunInstances operation: The key pair 'demo-key' does not exist
 
 Cause
@@ -34,17 +39,22 @@ Solution
 1. Exit the viewer by pressing q if you were viewing pasted text
 
 2. Delete the local file:
+
+```bash
 rm demo-key.pem
 
 3. Delete the key pair in AWS:
+
+```bash
 aws ec2 delete-key-pair --key-name demo-key
 
 4. Run the script again:
+
+```bash
 ./deploy_script.sh
 
 Expected Result
 demo-key.pem is successfully created
-
 The EC2 instance DemoInstance is launched in the correct region
 
 ## ❌ InvalidGroup.Duplicate
