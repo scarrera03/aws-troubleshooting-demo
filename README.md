@@ -49,6 +49,16 @@ aws-troubleshooting-demo/
 - Deployment automation using Bash and Terraform
 - Troubleshooting best practices
 
+
+## Author
+
+**Silvina Carrera Scholz**  
+Cloud & Data Science Enthusiast | AWS & AI Learner
+
+- GitHub: [@scarrera03](https://github.com/scarrera03)
+- LinkedIn: [linkedin.com/in/silvinacarrera](https://www.linkedin.com/in/silvinacarrera)
+
+Feel free to explore other projects or connect with me for collaboration!
 ---
 
 
